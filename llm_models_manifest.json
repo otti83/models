@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "id": "gemma-3-1b-it-q4f32_1-mlc",
+      "name": "Gemma 3 1B q4 (MLC)",
+      "main_language": "en",
+      "languages": ["en", "ja"],
+      "type": "chat",
+      "tags": ["gemma", "mlc", "q4", "slm", "general"],
+      "description": "英語中心だが日本語もある程度扱える、MLC向けの軽量チャットモデル。",
+      "quantization": "q4f32_1",
+      "context_length": 4096,
+      "backend": "mlc",
+      "files": [
+        {
+          "name": "mlc-chat-config.json",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/mlc-chat-config.json"
+        },
+        {
+          "name": "ndarray-cache.json",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/ndarray-cache.json"
+        },
+        {
+          "name": "ndarray-cache-b16.json",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/ndarray-cache-b16.json"
+        },
+        {
+          "name": "tensor-cache.json",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/tensor-cache.json"
+        },
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/tokenizer.json"
+        },
+        {
+          "name": "tokenizer.model",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/tokenizer.model"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/tokenizer_config.json"
+        },
+        {
+          "name": "added_tokens.json",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/added_tokens.json"
+        },
+        {
+          "name": "params_shard_0.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_0.bin"
+        },
+        {
+          "name": "params_shard_1.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_1.bin"
+        },
+        {
+          "name": "params_shard_2.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_2.bin"
+        },
+        {
+          "name": "params_shard_3.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_3.bin"
+        },
+        {
+          "name": "params_shard_4.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_4.bin"
+        },
+        {
+          "name": "params_shard_5.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_5.bin"
+        },
+        {
+          "name": "params_shard_6.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_6.bin"
+        },
+        {
+          "name": "params_shard_7.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_7.bin"
+        },
+        {
+          "name": "params_shard_8.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_8.bin"
+        },
+        {
+          "name": "params_shard_9.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_9.bin"
+        },
+        {
+          "name": "params_shard_10.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_10.bin"
+        },
+        {
+          "name": "params_shard_11.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_11.bin"
+        },
+        {
+          "name": "params_shard_12.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_12.bin"
+        },
+        {
+          "name": "params_shard_13.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_13.bin"
+        },
+        {
+          "name": "params_shard_14.bin",
+          "url": "https://huggingface.co/mlc-ai/gemma-3-1b-it-q4f32_1-MLC/resolve/main/params_shard_14.bin"
+        }
+      ]
+    },
+    {
+      "id": "dummy-1b-test",
+      "name": "Dummy 1B Test Model",
+      "main_language": "ja",
+      "languages": ["ja"],
+      "type": "chat",
+      "tags": ["dummy", "test", "placeholder"],
+      "description": "テスト用のダミーモデル。実際には存在しないエントリの例。",
+      "quantization": "q4",
+      "context_length": 2048,
+      "backend": "mlc",
+      "files": [
+        {
+          "name": "README.txt",
+          "url": "https://example.com/dummy/README.txt"
+        }
+      ]
+    }
+  ]
+}
