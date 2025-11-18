@@ -2,126 +2,191 @@
   "schema_version": 1,
   "models": [
     {
-      "id": "gemma-3-1b-it-q4f32_1-mlc",
-      "name": "Gemma 3 1B q4 (MLC)",
+      "id": "phi-3.5-mini-instruct-q4_k_m-gguf",
+      "name": "Phi-3.5 Mini Instruct Q4_K_M (GGUF)",
       "main_language": "en",
-      "languages": ["en", "ja"],
+      "languages": [
+        "en",
+        "ja"
+      ],
       "type": "chat",
-      "tags": ["gemma", "mlc", "q4", "slm", "general"],
-      "description": "英語中心だが日本語もある程度扱える、MLC向けの軽量チャットモデル。",
-      "quantization": "q4f32_1",
-      "context_length": 4096,
-      "backend": "mlc",
+      "tags": [
+        "phi-3.5",
+        "gguf",
+        "q4_k_m",
+        "slm",
+        "general"
+      ],
+      "description": "軽量だが性能の高い英語中心モデル。128Kコンテキスト対応で、日本語もそこそこ扱える汎用チャット用SLM。iPhoneローカル推論向き。",
+      "quantization": "Q4_K_M",
+      "context_length": 128000,
+      "backend": "llama.cpp",
       "files": [
         {
-          "name": "mlc-chat-config.json",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/mlc-chat-config.json"
-        },
-        {
-          "name": "ndarray-cache.json",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/ndarray-cache.json"
-        },
-        {
-          "name": "ndarray-cache-b16.json",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/ndarray-cache-b16.json"
-        },
-        {
-          "name": "tensor-cache.json",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/tensor-cache.json"
-        },
-        {
-          "name": "tokenizer.json",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/tokenizer.json"
-        },
-        {
-          "name": "tokenizer.model",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/tokenizer.model"
-        },
-        {
-          "name": "tokenizer_config.json",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/tokenizer_config.json"
-        },
-        {
-          "name": "added_tokens.json",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/added_tokens.json"
-        },
-        {
-          "name": "params_shard_0.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_0.bin"
-        },
-        {
-          "name": "params_shard_1.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_1.bin"
-        },
-        {
-          "name": "params_shard_2.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_2.bin"
-        },
-        {
-          "name": "params_shard_3.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_3.bin"
-        },
-        {
-          "name": "params_shard_4.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_4.bin"
-        },
-        {
-          "name": "params_shard_5.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_5.bin"
-        },
-        {
-          "name": "params_shard_6.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_6.bin"
-        },
-        {
-          "name": "params_shard_7.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_7.bin"
-        },
-        {
-          "name": "params_shard_8.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_8.bin"
-        },
-        {
-          "name": "params_shard_9.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_9.bin"
-        },
-        {
-          "name": "params_shard_10.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_10.bin"
-        },
-        {
-          "name": "params_shard_11.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_11.bin"
-        },
-        {
-          "name": "params_shard_12.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_12.bin"
-        },
-        {
-          "name": "params_shard_13.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_13.bin"
-        },
-        {
-          "name": "params_shard_14.bin",
-          "url": "https://llm-models.otti-gw.com/gemma-3-1b-it-q4f32_1-MLC/params_shard_14.bin"
+          "name": "Phi-3.5-mini-instruct-Q4_K_M.gguf",
+          "url": "https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF/resolve/main/Phi-3.5-mini-instruct-Q4_K_M.gguf"
         }
       ]
     },
     {
-      "id": "dummy-1b-test",
-      "name": "Dummy 1B Test Model",
-      "main_language": "ja",
-      "languages": ["ja"],
+      "id": "qwen2.5-1.5b-instruct-q4_k_m-gguf",
+      "name": "Qwen2.5 1.5B Instruct Q4_K_M (GGUF)",
+      "main_language": "en",
+      "languages": [
+        "en",
+        "zh",
+        "ja"
+      ],
       "type": "chat",
-      "tags": ["dummy", "test", "placeholder"],
-      "description": "テスト用のダミーモデル。実際には存在しないエントリの例。",
-      "quantization": "q4",
-      "context_length": 2048,
-      "backend": "mlc",
+      "tags": [
+        "qwen2.5",
+        "gguf",
+        "q4_k_m",
+        "slm",
+        "multilingual"
+      ],
+      "description": "1.5Bパラメータの多言語モデル。最大32Kコンテキスト（GGUF版も長コンテキスト対応）で、中国語・英語が得意、日本語も実用レベル。モバイル向けの軽量チャット用途に適合。",
+      "quantization": "Q4_K_M",
+      "context_length": 32768,
+      "backend": "llama.cpp",
       "files": [
         {
-          "name": "README.txt",
-          "url": "https://example.com/dummy/README.txt"
+          "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+        }
+      ]
+    },
+    {
+      "id": "llama-3.2-3b-instruct-q4_k_m-gguf",
+      "name": "Llama 3.2 3B Instruct Q4_K_M (GGUF)",
+      "main_language": "en",
+      "languages": [
+        "en",
+        "ja"
+      ],
+      "type": "chat",
+      "tags": [
+        "llama-3.2",
+        "gguf",
+        "q4_k_m",
+        "slm",
+        "general"
+      ],
+      "description": "Meta製の3B多言語モデル。128Kコンテキスト対応で、英語タスクに強く、日本語もそこそこ使える。オンデバイス・アシスタント用途向け。",
+      "quantization": "Q4_K_M",
+      "context_length": 128000,
+      "backend": "llama.cpp",
+      "files": [
+        {
+          "name": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+          "url": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf"
+        }
+      ]
+    },
+    {
+      "id": "japanese-stablelm-3b-4e1t-instruct-q4_k_m-gguf",
+      "name": "Japanese StableLM 3B 4E1T Instruct Q4_K_M (GGUF)",
+      "main_language": "ja",
+      "languages": [
+        "ja"
+      ],
+      "type": "chat",
+      "tags": [
+        "japanese",
+        "stablelm",
+        "gguf",
+        "q4_k_m",
+        "slm"
+      ],
+      "description": "日本語特化の3Bモデル。コンテキスト長4096で、日常会話や指示応答、日本語テキスト生成に向いたローカル用モデル。",
+      "quantization": "Q4_K_M",
+      "context_length": 4096,
+      "backend": "llama.cpp",
+      "files": [
+        {
+          "name": "japanese-stablelm-3b-4e1t-instruct-Q4_K_M.gguf",
+          "url": "https://huggingface.co/tensorblock/stabilityai_japanese-stablelm-3b-4e1t-instruct-GGUF/resolve/main/japanese-stablelm-3b-4e1t-instruct-Q4_K_M.gguf"
+        }
+      ]
+    },
+    {
+      "id": "tinyslime-1.1b-chat-q4_0-gguf",
+      "name": "TinySlime 1.1B Chat Q4_0 (GGUF)",
+      "main_language": "ja",
+      "languages": [
+        "ja"
+      ],
+      "type": "chat",
+      "tags": [
+        "tinyslime",
+        "gguf",
+        "q4_0",
+        "slm",
+        "japanese"
+      ],
+      "description": "日本語特化の1.1B小規模モデル TinySlime-1.1B-Chat のGGUF量子化版。スマートフォンなど組み込み環境向けに設計されており、日本語チャットに強い。", 
+      "quantization": "Q4_0",
+      "context_length": 2048,
+      "backend": "llama.cpp",
+      "files": [
+        {
+          "name": "TinySlime-1.1B-Chat-v1.0.Q4_0.gguf",
+          "url": "https://huggingface.co/QuantFactory/TinySlime-1.1B-Chat-v1.0-GGUF/resolve/main/TinySlime-1.1B-Chat-v1.0.Q4_0.gguf"
+        }
+      ]
+    },
+    {
+      "id": "lightblue-karasu-1.1b-q4_k_m-gguf",
+      "name": "lightblue karasu 1.1B Q4_K_M (GGUF)",
+      "main_language": "ja",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "type": "chat",
+      "tags": [
+        "karasu-1.1b",
+        "gguf",
+        "q4_k_m",
+        "slm",
+        "japanese"
+      ],
+      "description": "Japanese OSCAR と Japanese mC4 を中心に事前学習された日本語寄り1.1Bモデル karasu-1.1B のGGUF版。日本語テキスト理解と生成に強く、軽量チャット用途に向く。",
+      "quantization": "Q4_K_M",
+      "context_length": 2048,
+      "backend": "llama.cpp",
+      "files": [
+        {
+          "name": "lightblue-karasu-1.1B-q4_K_M.gguf",
+          "url": "https://huggingface.co/mmnga/lightblue-karasu-1.1B-gguf/resolve/main/lightblue-karasu-1.1B-q4_K_M.gguf"
+        }
+      ]
+    },
+    {
+      "id": "qwen2.5-0.5b-instruct-q4_k_m-gguf",
+      "name": "Qwen2.5 0.5B Instruct Q4_K_M (GGUF)",
+      "main_language": "en",
+      "languages": [
+        "en",
+        "zh",
+        "ja"
+      ],
+      "type": "chat",
+      "tags": [
+        "qwen2.5",
+        "gguf",
+        "q4_k_m",
+        "ultra-light",
+        "multilingual"
+      ],
+      "description": "約5億パラメータの超軽量多言語モデル。英語・中国語中心だが他言語も扱える。メモリの少ない端末やサクサク応答を重視する用途向けのベースラインとして利用可能。",
+      "quantization": "Q4_K_M",
+      "context_length": 32768,
+      "backend": "llama.cpp",
+      "files": [
+        {
+          "name": "Qwen2.5-0.5B-Instruct-Q4_K_M.gguf",
+          "url": "https://huggingface.co/bartowski/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/Qwen2.5-0.5B-Instruct-Q4_K_M.gguf"
         }
       ]
     }
